@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+body {
+    background-color: #e8e7e7;
+}
+
+.sidebar {
+    max-width: 277px;
+    height: 700px;
+    background-color: #fff;
+}
+
+.sidebar__info {
+     margin-left: 20px; 
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__info-1, .sidebar__info-2, .sidebar__info-4, .sidebar__info-5 {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.sidebar__info-1 p, .sidebar__info-4 p, .sidebar__info-5 p {
+    color: #747474;
+}
+
+.sidebar__info-3 {
+    margin-left: 40px;
+}
+
+.sidebar__info-4 {
+    border-bottom: 1px solid #E5E5EA;
+}
+
+.header {
+    background-color: #fff;
+    margin-left: 2px;
+    display: flex;
+    max-width: 1163px;
+    width: 100vw;
+}
+
+.header__proj {
+    display: flex;
+    align-items: center;
+}
+
+.header__proj h1 {
+    margin-left: 20px;
+}
+
+.header__upd {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.header_btn {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.header_btn button {
+    background-color: #F2F8FE;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0076F5;
+    cursor: pointer;
+}
+
+.subheader {
+    display: flex;
+    background-color:  #fff;
+    margin-top: 20px; 
+    margin-left: 20px;
+    height: 64px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.subheader__input {
+    position: relative;
+    margin-left: 16px;
+}
+
+.span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); pointer-events: none;
+}
+
+.search__input {
+    width: 100%;
+    height: 32px;
+    padding-left: 35px;
+    border: 1px solid #E5E5EA;
+    border-radius: 5px;
+    color: #BBBBBB;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.subheader__date-input {
+    margin-left: 60px;
+    height: 32px;
+    border: 1px solid #E5E5EA;
+    border-radius: 5px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.subheader__download {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.subheader__btns {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.subheader__main-btn {
+    border: none;
+    background-color: #fff;
+    color: #0076F5;
+    cursor: pointer;
+}
+
+.btn_icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    z-index: 1000;
+    width: 1049px;
+    height: 327px;
+    border-radius: 15px;
+
+}
+
+.modal__left {
+    max-width: 224px;
+    border-right: 1px solid #BBBBBB;
+    padding-right: 5px;
+    flex: 0 0 auto;
+}
+
+.modal__left-btns {
+    margin-top: 16px;
+}
+
+.modal__left-days {
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.accept-btn {
+    background-color: #0076F5;
+    color: #fff;
+    width: 105px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    width: 105px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    color: #0076F5;
+    cursor: pointer;
+}
+
+.modal__calendar {
+    flex: 1;
+    padding-left: 10px;
+    display: flex;
+}
+
+.modal__calendar-first, .modal__calendar-second, .modal__calendar-third {
+    width: 248px;
+    height: 243px;
+}
+
+.modal__calendar-second, .modal__calendar-third {
+    margin-left: 20px;
+}
+
+.top_calendar-first, .top_calendar-second, .top_calendar-third {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 50px;
+}
+
+.mid_calendar-first, .mid_calendar-second, .mid_calendar-third {
+    display: flex;
+    justify-content: space-around;
+    color: #BBBBBB;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.mid_calendar-first p, .mid_calendar-second p, .mid_calendar-third p {
+    cursor: pointer;
+}
+
+.mid_calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mid_calendar-days p {
+    width: 14.28%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}

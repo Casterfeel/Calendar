@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__header">
+                <h1>SEO</h1>
+                <img src="./images/arrow_back.png" alt="arrow">
+            </div>
+            <div class="sidebar__info">
+                <div class="sidebar__info-1">
+                    <img src="./images/search.png" alt="search">
+                    <p>Аналитика проекта</p>
+                </div>
+                <div class="sidebar__info-2">
+                    <img src="./images/fix.png" alt="fix">
+                    <p>Позиции из Я.Вебмастера</p>
+                    <img src="./images/trian.png" alt="triangle">
+                </div>
+                <div class="sidebar__info-3">
+                    <p style="font-weight: bold;">Запросы Я.Вебмастер</p>
+                    <p>URLs Я.Вебмастер</p>
+                </div>
+                <div class="sidebar__info-4">
+                    <img src="./images/xml.png" alt="xml">
+                    <p>Съем позиций (Live/XML)</p>
+                </div>
+                <div class="sidebar__info-5">
+                    <img src="./images/rect.png" alt="rect">
+                    <p>Мои проекты </p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="header__proj">
+                    <h1>Проект 1</h1>
+                    <img src="./images/down.png" alt="down ">
+                </div>
+                <div class="header__upd">
+                    <img src="./images/update.png" alt="update">
+                    <p>Обновлено 18.10.2024 в 10:11</p>
+                </div>
+                <div class="header_btn">
+                    <button><img src="./images/plus.png" alt="+">Новый проект</button>
+                </div>
+            </div>
+            <div class="subheader">
+                <div class="subheader__input">
+                    <span class="span"><img src="./images/lupa.png" alt=""></span>
+                    <input type="text" placeholder="Начните вводить слово" class="search__input">
+                </div>
+                <!--Календарь-->
+                <div class="subheader__date-input" onclick="toggleCalendar()">
+                    <img src="./images/date.png" alt="date">
+                    <p id="selectedDates">01.10.2024-01.11.2024</p>
+                    <img src="./images/down.png" alt="">
+                </div>
+                <div class="modal" id="calendarModal" style="display: none;">
+                    <div class="modal__left">
+                        <div class="modal__left-days">
+                            <p>Сегодня</p>
+                            <p style="
+                            font-weight: bold;
+                            background-color: #e2e2e2;
+                            height: 32px;
+                            align-self:center;
+                            padding-top: 7px;
+                            border-radius: 5px;
+                            ">Вчера</p>
+                            <p>Последние 7 дней</p>
+                            <p>Последние 30 дней</p>
+                            <p>последние 90 дней</p>
+                            <p>От начала работы</p>
+                        </div>
+                        <div class="modal__left-btns">
+                            <button class="accept-btn">Применить</button>
+                            <button class="cancel-btn">Отменить</button>
+                        </div>
+                    </div>
+                    <div class="modal__calendar">
+                        <div class="modal__calendar-first">
+                            <div class="top_calendar-first">
+                                <img src="./images/left.png" alt="arrow">
+                                <p class="month-year">Сентябрь 2024</p>
+                            </div>
+                            <div class="mid_calendar-first">
+                                <p>Пн</p>
+                                <p>Вт</p>
+                                <p>Ср</p>
+                                <p>Чт</p>
+                                <p>Пт</p>
+                                <p>Сб</p>
+                                <p>Вс</p>
+                            </div>
+                            <div class="mid_calendar-days"></div>
+                        </div>
+                    
+                        <div class="modal__calendar-second">
+                            <div class="top_calendar-second">
+                                <p class="month-year">Октябрь 2024</p>
+                            </div>
+                            <div class="mid_calendar-second">
+                                <p>Пн</p>
+                                <p>Вт</p>
+                                <p>Ср</p>
+                                <p>Чт</p>
+                                <p>Пт</p>
+                                <p>Сб</p>
+                                <p>Вс</p>
+                            </div>
+                            <div class="mid_calendar-days"></div>
+                        </div>
+                    
+                        <div class="modal__calendar-third">
+                            <div class="top_calendar-third">
+                                <p class="month-year">Ноябрь 2024</p>
+                                <img src="./images/right.png" alt="">
+                            </div>
+                            <div class="mid_calendar-second">
+                                <p>Пн</p>
+                                <p>Вт</p>
+                                <p>Ср</p>
+                                <p>Чт</p>
+                                <p>Пт</p>
+                                <p>Сб</p>
+                                <p>Вс</p>
+                            </div>
+                            <div class="mid_calendar-days"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subheader__download">
+                    <img src="./images/load.png" alt="load">
+                    <img src="./images/down_blue.png" alt="">
+                </div>
+                <div class="subheader__btns">
+                    <button class="subheader__main-btn">Сбросить сортировку</button>
+                    <div class="btn_icon">
+                        <img src="./images/set.png" alt="settings">
+                        <p>Настройки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
